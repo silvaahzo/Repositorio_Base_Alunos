@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Netflix do silvaah</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #141414; /* fundo escuro Netflix */
+            color: #fff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #e50914; /* vermelho Netflix */
+            font-size: 2rem;
+            margin-bottom: 10px;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .movies {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .movies::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .movies::-webkit-scrollbar-thumb {
+            background-color: #e50914;
+            border-radius: 4px;
+        }
+
+        .movie {
+            background-color: #222;
+            padding: 15px;
+            min-width: 180px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .movie:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #e50914;
+        }
+
+        .movie-title {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="category">
+        <h1>Drama</h1>
+        <div class="movies">
+            <div class="movie"><div class="movie-title">Ainda Estou Aqui</div></div>
+            <div class="movie"><div class="movie-title">O Poderoso Chefão</div></div>
+            <div class="movie"><div class="movie-title">Ela</div></div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h1>Comédia</h1>
+        <div class="movies">
+            <div class="movie"><div class="movie-title">Tempos Modernos</div></div>
+            <div class="movie"><div class="movie-title">American Pie</div></div>
+            <div class="movie"><div class="movie-title">Dr. Dolittle</div></div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h1>Policial</h1>
+        <div class="movies">
+            <div class="movie"><div class="movie-title">O Exterminador do Futuro</div></div>
+            <div class="movie"><div class="movie-title">O Procurado</div></div>
+            <div class="movie"><div class="movie-title">Velozes e Furiosos</div></div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h1>Guerra</h1>
+        <div class="movies">
+            <div class="movie"><div class="movie-title">Rambo</div></div><img src="https://videos.openai.com/vg-assets/assets%2Ftask_01k5xebjjkeftvn9zqvb5dpgzw%2F1758703649_img_1.webp?st=2025-09-24T12%3A08%3A33Z&se=2025-09-30T13%3A08%3A33Z&sks=b&skt=2025-09-24T12%3A08%3A33Z&ske=2025-09-30T13%3A08%3A33Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=fea36edb-a052-425e-a84a-436fdce0a7b4&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=ZcKbYhweuXPMiT90lihbqCtlN2LicQoabFNNUatzy%2FU%3D&az=oaivgprodscus" alt="rambo" />
+            <div class="movie"><div class="movie-title">1917</div></div>
+            <div class="movie"><div class="movie-title">Até o Último Homem</div></div>
+        </div>
+    </div>
+</body>
+
+</html>
